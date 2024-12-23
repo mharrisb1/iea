@@ -1,5 +1,21 @@
 # Impact-Effort Analysis for Prioritizing Issues
 
+<!--toc:start-->
+
+- [Impact-Effort Analysis for Prioritizing Issues](#impact-effort-analysis-for-prioritizing-issues)
+  - [Overview](#overview)
+  - [Methodology](#methodology)
+    - [Process](#process)
+    - [Matrix](#matrix)
+    - [Effort](#effort)
+    - [Impact](#impact)
+  - [Scripts](#scripts)
+    - [Prerequisites](#prerequisites)
+    - [Usage](#usage)
+  - [Addendum](#addendum)
+    - [Strictness](#strictness)
+    <!--toc:end-->
+
 The goal of using Impact-Effort Analysis (IEA) is to provide a minimal effort prioritization methodology for determining which bodies of work (namely Github issues in this context) to work on first. The method is far from scientific and rigorous but I've found it useful enough and have shared it enough times that it warrants writing down in one place that I can link out to.
 
 ## Overview
