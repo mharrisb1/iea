@@ -4,7 +4,9 @@ The goal of using Impact-Effort Analysis (IEA) is to provide a minimal effort pr
 
 ## Overview
 
-The main goal of IEA is to prioritize work in the most economical way. Work that requires low effort but delivers large value is more desirable than work that takes high effort but delivers little to no value. That's basically it. Find a way to sort work so that you complete low-effort, high-impact tasks first and then move down the list. Another major part of the methodology is continuous reevaluation, pruning, and expansion. New tasks should be added and prioritized, old tasks should be looked at again to check your assumptions, and "stale" or old tasks that have been marked as low priority should be removed.
+The main goal of IEA is to prioritize work in the most economical way. Work that requires low effort but delivers large value is more desirable than work that takes high effort but delivers little to no value. That's basically it. Find a way to sort work so that you complete low-effort, high-impact tasks first and then move down the list.
+
+I've also included some basic scripts below to set help set up a Github repo to perform this analysis on.
 
 ## Methodology
 
@@ -42,6 +44,28 @@ Effort is a subjective estimation for the amount of development work required to
 ### Impact
 
 Impact is a subjective estimation for the amount of value completing a task provides. This could be business value, technical value, or anything else. There is more than just one type of value for development work so you should use your head. Always pushing out tech debt for feature work because of "immediate business value" is short sighted. What about development velocity value? Or mental health value? Again, personal preference here is to do the simplest thing and just give an answer or high or low.
+
+## Scripts
+
+These scripts edit a target repository and add pre-made labels to them so you can label issues with effort and impact estimations.
+
+### Prerequisites
+
+These scripts assume you have [`gh`](https://cli.github.com) CLI installed and are authenicated with write access to the target repo.
+
+### Usage
+
+Ensure that the scripts are executable:
+
+```sh
+find scripts -type f -name "*.sh" -exec chmod +x {} \; -print
+```
+
+Run the scripts (use `-h` or `--help` for usage):
+
+```sh
+scripts/add_labels.sh --repo owner/repo --quiet
+```
 
 ## Addendum
 
